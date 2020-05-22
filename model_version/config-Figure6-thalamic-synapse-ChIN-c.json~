@@ -1,0 +1,10 @@
+{
+	"single-cell-models": ["config/CholinergicOptimisation/Opt0/Model_ChIN-Opt0-v9.json"],
+	"Synapse": {
+		"brainarea": "TH",
+		"synapse-parameter": ["3", 1e-6]
+	},    
+	"Holding_voltage":  -0.16702466609785915,
+	"Thalamic_stimulation": [1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700],
+	"simulation_time": 6000
+}

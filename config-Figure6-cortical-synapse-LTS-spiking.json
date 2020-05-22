@@ -1,0 +1,9 @@
+{
+	"single-cell-models": ["config/LTSOptimisation/Model-LTS-v0.json"],
+	"Synapse": {
+		"brainarea": "M1RH",
+		"synapse-parameter": ["3", 7e-7]
+	},
+	"Cortical_stimulation": [1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700],
+	"simulation_time": 3000
+}

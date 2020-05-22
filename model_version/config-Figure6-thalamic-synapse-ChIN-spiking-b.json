@@ -1,0 +1,9 @@
+{
+	"single-cell-models": ["config/CholinergicOptimisation/Opt0/Model_ChIN-Opt0-v9.json"],
+	"Synapse": {
+		"brainarea": "TH",
+		"synapse-parameter": ["2", 1e-6]
+	},
+	"Cortical_stimulation": [1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700],
+	"simulation_time": 6000
+}

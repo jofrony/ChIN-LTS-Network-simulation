@@ -2,24 +2,13 @@
 Simulations for ChIN-LTS network with extrinsic cortical and thalamic input - with nitric oxide and muscarinic modulation
 
 
-
 ### Installing the environment
 
-Install miniconda and NEURON according to the instructions: https://www.neuron.yale.edu/neuron/download/compile_linux
+Using [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
-
- The following modules are needed:
-
- elephant==0.6.4
- bluepyopt==1.8.64
- matplotlib==3.0.3
- neo==0.8.0
- neuron==7.6
- numpy==1.17.3
- pip==19.3.1
- quantities==0.12.3
+Install NEURON according to the instructions:[NEURON](https://www.neuron.yale.edu/neuron/download/compile_linux)
  
- The simulations are divided for each figure and can be simulated using for example:
+The simulationsare done via running the following command, for example for Figure 6 thalamic synapse simulation for ChINs:
  
   
  ```
@@ -27,7 +16,4 @@ python Figure6-thalamic-synapse.py
 
  ```
 
-The results will be in Output-folder 
-
-
-
+The results will be in Output-folder.

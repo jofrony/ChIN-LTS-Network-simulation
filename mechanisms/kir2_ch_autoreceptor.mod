@@ -1,0 +1,63 @@
+:Kir2_ch.MOD
+: Kir2, inwardly rectifying channel
+
+NEURON {
+	SUFFIX kir2_ch_auto
+	USEION k READ ek WRITE ik
+	RANGE g, ninf, tn, ik, gbar, modulation_bath
+	GLOBAL C_tn, vh, vc
+	POINTER muscarinic_modulation						  
+}
+
+UNITS {
+	(S) = (siemens)
+	(mV) = (millivolt)
+	(mA) = (milliamp)
+}
+
+PARAMETER {
+        gbar = 3	(S/cm2)
+	modulation_bath = 1	
+	ek		(mV)
+	vh = -50	(mV)
+	vc = 5		(mV)
+	C_tn = 1	(ms)
+}
+
+ASSIGNED {
+	v	(mV)
+	ninf
+	tn	(ms)
+	ik	(mA/cm2)
+	g	(S/cm2)
+	muscarinic_modulation (1)
+}
+
+STATE {
+	n
+}
+
+BREAKPOINT {
+	SOLVE states METHOD cnexp
+	g = gbar*n*1.1
+	ik = g*(v-ek)
+}
+
+DERIVATIVE states{
+	values()
+	n' = (ninf - n)/tn
+}
+
+INITIAL {
+	values()
+	n = ninf
+}
+
+PROCEDURE values() {
+	ninf = 1/(1 + exp((v - vh)/vc))
+	tn = C_tn
+}
+
+FUNCTION modulation() {
+	  modulation = (muscarinic_modulation*1e4) + 1
+}

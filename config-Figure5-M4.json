@@ -1,0 +1,6 @@
+{
+	"single-cell-models": ["config/CholinergicOptimisation/Opt0/Model_ChIN-Opt0-v9.json","config/LTSOptimisation/Model-LTS-v0.json"],
+	"simulation_time": 15000,
+	"muscarinic_strength": 0.3,
+	"muscarinic_activation_time": [5050,5100,5150,5200,5250,5300,5350,5400,5450,5500]
+}

@@ -1,0 +1,6 @@
+{
+	"single-cell-models": ["config/CholinergicOptimisation/Opt0/Model_ChIN-Opt0-v9.json", "config/LTSOptimisation/Model-LTS-v0.json"],
+	"simulation_time": 20000,
+	"nitric_oxide_strength": 0.003,
+	"nitric_oxide_activation_time": [2000]
+}

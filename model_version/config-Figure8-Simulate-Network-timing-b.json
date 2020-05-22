@@ -1,0 +1,45 @@
+{
+	"single-cell-models": ["config/CholinergicOptimisation/Opt0/Model_ChIN-Opt0-v9.json", "config/LTSOptimisation/Model-LTS-v0.json"],
+	"muscarinic_weight": 0.3,
+	"nitric_oxide_weight": 0.01,
+	"Thalamus-synapse": {
+		"Unknown[0]": {
+			"type": "TH_ChAT6-85",
+			"experiment": "GBZ_CC_H20",
+			"U": 0.016533505399547455,
+			"tauR": 0.5517901424399214,
+			"tauF": 0.7118251656409991,
+			"tau": 0.20969437361016804,
+			"cond": 0.09613147018797587,
+			"nmda_ratio": 6.900023418442335
+		}
+	},
+	"Cortex-synapse": {
+		"Unknown[0]": {
+			"type": "M1RH_ChAT14-111",
+			"experiment": "GBZ_CC_H20",
+			"U": 0.8941094853363152,
+			"tauR": 0.010663317651841153,
+			"tauF": 1.753858670468658,
+			"tau": 0.005793880297283717,
+			"cond": 0.002916417729954966,
+			"nmda_ratio": 4.441325192406086
+		},
+		"Unknown[1]": {
+			"name": "LTS",
+			"U": 0.028250891853167315,
+			"tauR": 1.1989988346657008,
+			"tauF": 1.354889324259572,
+			"tau": 0.9953045965140553,
+			"cond": 0.00037176827804118184,
+			"nmda_ratio": 6.477674542395708
+		}
+	},
+	"Cortex_synapse_ChIN_conductance": 1e-6,
+	"Cortex_synapse_LTS_conductance": 7e-7,
+	"Thalamus_synapse_ChIN_conductance": 1e-6,
+	"Cortex_frequency": 20,
+	"Thalamus_frequency": 4,
+	"checkerweight": 0.05,
+	"simulation_time": 50000
+}
