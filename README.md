@@ -6,7 +6,7 @@ Simulations for ChIN-LTS network with extrinsic cortical and thalamic input - wi
 
 Using [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
-Install NEURON according to the instructions:[NEURON](https://www.neuron.yale.edu/neuron/download/compile_linux)
+Install NEURON according to the instructions: [NEURON](https://www.neuron.yale.edu/neuron/download/compile_linux)
  
 The simulationsare done via running the following command, for example for Figure 6 thalamic synapse simulation for ChINs:
  
